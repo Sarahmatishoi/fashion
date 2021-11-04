@@ -1,0 +1,226 @@
+html,body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+ font-family: sans-serif;
+ /* background-image: url('https://media.istockphoto.com/photos/the-bigger-the-hat-the-bigger-the-dreams-picture-id1299986822?b=1&k=20&m=1299986822&s=170667a&w=0&h=ilCVRpxSPFFlCNBd1ems-6nXGBQDSjbXBLppwT1h3oc='); */
+ background-repeat: no-repeat;
+background-size: cover;
+  
+      
+}
+.menu-bar{
+background-color:#DFC5DD ;
+text-align: center;
+} 
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+.active,.menu-bar ul li:hover{
+    background: white;
+   border-radius: 3px;
+
+}
+.menu-bar.fa{
+    margin-right: 8px;
+}
+.sub-menu-1{
+    display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background:rgb(211, 120, 135);
+    margin-top: 15px;
+    margin-left: -15px;
+} 
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+width: 150px;
+padding: 10px;
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;
+text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: whitesmoke;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: rgb(211, 120, 135);
+}
+button[type=submit] {
+    float: right;
+    display: inline-block;
+    padding: 10px 12px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 8px;
+    border-radius: 2px;
+    
+
+    
+    }
+    .cta{
+        text-decoration: none;
+        padding-top: 20px;
+    }
+    
+    h1{
+        text-align: center;
+        color: white;
+    }
+    .navbar{
+        margin-left: 35%;
+      }
+      .form-control{
+          margin-top: 8px;
+
+      }
+      .btn {
+          height:40px ;
+          margin-top: 20px;
+          text-align: center;
+      }
+      .footer {
+        background-color:#DFC5DD;
+        padding: 70px 0;
+        margin-top: 400px;
+      }
+      .container{
+        max-width: 1170px;
+      
+        margin: auto;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      ul{
+        list-style: none;
+      }
+      .footer-col{
+       
+        width: 25%;
+        padding: 0 15px;
+      
+      }
+      .footer-col h1{
+        font-size: 18px;
+        color:black;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        font-weight: 500;
+        position: relative;
+      }
+      .footer-col h1::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        /* background-color:black; */
+        height: 2px;
+        box-sizing:border-box ;
+        width: 50px;
+      }
+      .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+      }
+      .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color:black;
+        text-decoration: none;
+        font-weight: 300;
+        color:black;
+        display: block ;
+        transform: all 0.3s ease;
+      }
+      .footer-col ul li a:hover{
+        color: #ffffff;
+        padding-left: 8px;
+      }
+      .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: black;
+        margin-right: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color:white;
+      }
+      .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+      }
+      @media(max-width:767) {
+        .footer-col{
+          width: 50%;
+          margin-bottom: 30px;
+        }
+      }
+      @media(max-width:767) {
+        .footer-col{
+          width: 100%;
+          margin-bottom: 30px;
+        }
+      }
+     li{
+         list-style: none;
+         
+     }
+     hr{
+      height: 1px;
+      background-color: black;
+      border-radius: 2px;
+    }
+    p{
+      text-align: center;
+      margin-top: 30px;
+    }
+    .navbar{
+      margin-left: 35%;
+    } 
+    h2{
+        font-size: 20px;
+    }
+    
+   

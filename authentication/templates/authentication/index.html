@@ -7,6 +7,51 @@
     <title>Authentication</title>
 </head>
 <body>
+    <button  type="submit"><a class="cta" href="/signout">LogOut</a></button>
+    <button type="submit"><a  class="cta" href="/signup">SignUp</a> </button>
+    <button type="submit"><a  class="cta" href="/signin">LogIn</a></button>
+     
+    {% extends 'detail.html' %}
+    {% block content %}
+    {% for message in messages %}
+
+    <div class="alert alert.{{ message.tags}} alert-dismissible fade show" role="alert"  >
+    <strong>Message:</strong> {{ message }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+    <span arra-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endfor %}
+
+    <h1>Welcome to glow and glamour</h1>
+
+    {% if user.is_authenticated %}
+
+    <!-- <button  type="submit"><a class="deco" href="/signout">SignOut</a></button>
+    <button type="submit"><a  class="deco" href="/signup">SignUp</a> </button>
+    <button type="submit"><a  class="deco" href="/signin">SignIn</a></button> -->
+    {% endif %}
+
+    
+ 
+    {% endblock content %}
+
+
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+</head>
+<body>
     
     {% for message in messages %}
     <div class="alert alert.{{ message.tags}} alert-dismissible fade show" role="alert"  >
@@ -28,4 +73,4 @@
     <button type="submit"><a href="/signin">SignIn</a></button>
     {% endif %}
 </body>
-</html>
+</html> -->

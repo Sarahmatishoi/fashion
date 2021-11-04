@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
 
     {% for message in messages %}
     <div class="alert alert.{{ message.tags}} alert-dismissible fade show" role="alert"  >
@@ -20,6 +21,7 @@
     <h1>Sign In</h1>
 
    <form action="/signin" method="post">
+        {{ form }}
         {% csrf_token %} 
         <label for="">Username</label>
         <input type="text" id="username" name="username" placeholder="create a username", required>
@@ -30,6 +32,60 @@
         
        <button type="submit">SignIn</button>
     </form>
+    <style>
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 1px;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+ width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 1px;
+  box-sizing: border-box;
+  color: gainsboro;
+
+}
+form{
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
     
+}
+h1{
+    text-align: center;
+}
+button{
+  background-color: #DFC5DD; 
+  border: none;
+  color:black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+    
+}
+input,label{
+    display:block;
+    margin-left: 1%;
+}
+label{
+    text-align: justify;
+    margin-left: 37.5%;
+    font-size: 18px;
+}
+
+
+</style>
+   
+  
 </body>
 </html>

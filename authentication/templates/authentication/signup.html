@@ -20,6 +20,7 @@
     <h1>Sign Up</h1>
 
    <form action="/signup" method="post">
+         {{ form }}
         {% csrf_token %} 
         <label for="">Username</label>
         <input type="text" id="username" name="username" placeholder="create a username", required>
@@ -31,7 +32,7 @@
         <input type="text" id="lastname" name="lname" placeholder="Enter your last name", required>
         <br>
         <label for="">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email", required>
+        <input type="text" id="email" name="email" placeholder="Enter your email", required>
         <br>
         <label for="">Password</label>
         <input type="password" id="Password" name="pass1" placeholder="Create your Password", required>
@@ -43,5 +44,56 @@
        <button type="submit">SignUp</button>
     </form>
     
+    <style>
+        input[type=text] {
+          width: 25%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border-radius: 1px;
+          box-sizing: border-box;
+        }
+        
+        input[type=password] {
+         width: 25%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border-radius: 1px;
+          box-sizing: border-box;
+        
+        }
+        form{
+            text-align: center;
+            font-size: 16px;
+            box-sizing: border-box;
+            
+        }
+        h1{
+            text-align: center;
+        }
+        button{
+          background-color: #DFC5DD; 
+          border: none;
+          color:black;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          border-radius: 10px;
+            
+        }
+        input,label{
+            display:block;
+            margin-left: 1%;
+        }
+        label{
+            text-align: justify;
+            margin-left: 37.5%;
+            font-size: 18px;
+        }
+        
+    </style>
 </body>
 </html>
